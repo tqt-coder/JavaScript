@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra hóa 8 nha nha !!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <h3 class= "header__title">Kiểm tra học kì I</h3>
+        </div>
+        <form class="content">
+            <div class="content__subtitle">Nội dung câu hỏi:</div>
+            <!-- error add //invalid -->
+            <div class="question ">
+                <p class="question__number">Câu 1:</p>
+                <input name="text" type="text" rule = "isRequire" class="question__subject" placeholder="Vui lòng nhập kết quả">
+                <span class="check__result"></span>
+            </div>
+            <div class="question ">
+                <p class="question__number">Câu 2:</p>
+                <input name="text1"  type="text" rule= "isRequire|isNumber" class="question__subject" placeholder="Vui lòng nhập kết quả">
+                <span class="check__result"></span>
+            </div>
+            
+            <div class="btn__submit">
+                <input type="submit" value="Nộp bài" class="save">
+            </div>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+    <script>
+        var form1 =new  Validator('.content');
+        // nếu form1.onSubmit thì submit theo mặc đinh
+        form1.onSubmit = function( formData){
+            console.log(formData)
+        };
+     </script>
+</body>
+</html>

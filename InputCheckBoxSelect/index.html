@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: block;
+        }
+        ul{
+            display: none;
+        }
+        input[type = 'text']:focus ~ ul{
+            display: block;
+        }
+        select{
+            margin-top:  100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name= "text1">
+    <ul>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>Python</li>
+        <li>C</li>
+    </ul>
+    <input type="checkbox" name="" id="">
+    <select name="" id="">
+        <option value="#1">Javascript</option>
+        <option value="#2">PHP</option>
+        <option value="#3">Ruby</option>
+    </select>
+    <div>
+        Div
+        <button>Click me</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

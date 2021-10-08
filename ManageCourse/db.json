@@ -1,0 +1,19 @@
+{
+  "courses": [
+    {
+      "name": "Python",
+      "description": "Học cơ bản đến nâng cao bằng python để phân tích dữ liệu",
+      "id": 1
+    },
+    {
+      "name": "JavaScript",
+      "description": "Làm web động và tạo và lấy dữ liệu từ Backend",
+      "id": 2
+    },
+    {
+      "name": "Java",
+      "description": "Học cơ bản đến Hero bằng Java",
+      "id": 3
+    }
+  ]
+}

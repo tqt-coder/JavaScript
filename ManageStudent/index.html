@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: 50% 0%;
+        }
+
+        .student {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .infor {
+            margin: 0 auto;
+            width: 50vh;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .edit-student{
+            margin: 10px 0;
+            padding: 4px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="user">
+        <ul class="content">
+
+        </ul>
+        <div class="infor">
+            <label for="">Full name</label>
+            <input type="text" name="name" >
+            <label for="">Major</label>
+            <input type="text" name="major">
+            <label for="">Image</label>
+            <input type="text" name="img">
+            <button class="create-student">Create</button>
+        </div>
+    </div>
+    
+    <script src="./main.js"></script>
+    
+
+</body>
+
+</html>

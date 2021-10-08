@@ -1,0 +1,146 @@
+:root{
+    --white-color: #fff;
+    --active-color: #ff4b4a;
+    --height-heading: 36.6rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-family: inherit;
+}
+.app{
+    background-color: #2daaed;
+}
+
+.music{
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--white-color);
+    min-height: 40rem;
+}
+
+.heading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, #ad65db,#5f4de7);
+    min-height: 3rem;
+}
+.heading__title{
+    margin: 1rem 0 0.6rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ffdb00;
+    letter-spacing: 0.1rem;
+}
+
+.heading__song{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 400;
+    color: #ffdb00;
+}
+
+.cd{
+    width: 100%;
+    padding: 2rem 0;
+    margin: 0 auto;  
+}
+.cd-thumb{
+    padding-top: 50%;
+    width: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* background-position: center right; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#progress{
+    width: 90%;
+    margin: 0 5%;
+    
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    margin: 0 3rem;
+}
+.controls__icon{
+    padding: 0.6rem 2rem;
+    font-size: 2rem;
+    color: var(--white-color);
+}
+.heading .controls__playing{
+   display: block;
+}
+.controls__playing .controls__icon{
+    font-size: 3.4rem;
+}
+.active .controls__icon{
+    color: var(--active-color);
+}
+.controls__pause{
+    display: none;
+}
+.player .controls__pause{
+    display: block;
+}
+.player .controls__playing{
+    display: none;
+}
+.controls__pause .controls__icon{
+    font-size: 4rem;
+}
+/* content */
+.content{
+   background-image: linear-gradient(0deg, #f5c135, #bf8525);
+   padding-bottom: 0.2rem;
+   height: 65vh;
+   overflow: auto;
+   margin-top: var(--height-heading);
+}
+.content::-webkit-scrollbar{
+    display: none;
+}
+.category{
+    display: flex;
+    margin: 0.4rem 1rem;
+    padding: 0.6rem 1rem;
+    background-color: #fdbdce;
+    border-radius: 0.6rem;
+
+}
+.category.active{
+    background-color: #66ae4f;
+    color: var(--white-color);
+}
+
+.category__img{
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 0.4rem;
+}
+.wrap{
+    margin-left: 2rem;
+}
+.category__song{
+    font-size: 1.6rem;
+    padding: 0 0 1rem;
+}
+
+.category__singer{
+    font-size: 1.4rem;
+}
+

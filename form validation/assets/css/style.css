@@ -1,0 +1,100 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+}
+*{
+    box-sizing: inherit;
+}
+html, body{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6em;
+    box-sizing: border-box;
+}
+.login{
+    width: 36rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--white-color);
+    margin-bottom: 5rem;
+}
+.app{
+    padding: 4rem 0;
+    background-color: #f5f5f5;
+}
+.login__heading{
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+
+.login__description{
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+    color: #888;
+}
+
+.login__heart{
+    font-size: 1.6rem;
+    color: red;
+}
+.form__name{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.label__name{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+.filed__name{
+    font-size: 1.4rem;
+    padding: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.4rem;
+    outline: none;
+}
+.filed__name:hover{
+    border-color: #1dbfaf;
+}
+.form__name.invalid .filed__name{
+    border-color:  #f33a58;
+}
+.form__message{
+    font-size: 1.4rem;
+    display: block;
+    padding: 0.8rem 0;
+}
+.form__name.invalid 
+.form__message{
+    color: #f33a58;
+}
+.form__check{
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+}
+.form__check-text{
+    font-size:  1.4rem;
+    display: block;
+    transform: translateY(20%);
+    margin-left: 0.6rem;
+}
+.form__submit{
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    background-color:  #1dbfaf;
+    border-radius: 1rem;
+    border: none;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight:500;
+}
+.form__submit:hover{
+    background-color:  #1ac7b6;
+}

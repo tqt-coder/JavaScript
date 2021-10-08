@@ -1,0 +1,28 @@
+{
+  "student": [
+    {
+      "name": "Quốc Tuấn",
+      "major": "Data Engineering",
+      "img": "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG98ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+      "id": 1
+    },
+    {
+      "name": "ÁI Kiều",
+      "major": "Banking",
+      "img": "https://www.istockphoto.com/resources/images/FreeVideos/Free-video-1169238471-740x492.jpg",
+      "id": 2
+    },
+    {
+      "name": "Trang Trần",
+      "major": "Student",
+      "img": "https://api.time.com/wp-content/uploads/2019/08/better-smartphone-photos.jpg",
+      "id": 3
+    },
+    {
+      "name": "Ái Nhi",
+      "major": "Student",
+      "img": "https://api.time.com/wp-content/uploads/2019/08/better-smartphone-photos.jpg",
+      "id": 5
+    }
+  ]
+}

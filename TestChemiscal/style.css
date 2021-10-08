@@ -1,0 +1,72 @@
+:root{
+    --text-color: #222;
+    --error-color: #ed5a4e;
+    --white-color: #fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family: inherit;
+}
+.app{
+    background-color: #ecf3f6;
+}
+.header__title{
+    padding: 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.content{
+    padding: 0 1rem;
+}
+.content__subtitle{
+    font-size: 1.4rem;
+}
+.question{
+    padding: 1rem 0;
+}
+.question__number{
+    font-size: 1.4rem;
+    padding: 0.4rem 0;
+}
+.check__result{
+    display: none;
+    margin-top: 0.2rem;
+    font-size: 1.4rem;
+    color: var(--error-color);
+    
+}
+.invalid .check__result{
+    display: block;
+}
+.question__subject{
+    padding: 0.4rem 1rem;
+    font-size: 1.4rem;
+    outline: none;
+    min-height: 2rem;
+    width: 100%;
+    border-color: rgba(0,0,0, 0.3);
+    color: var(--text-color);
+}
+.save{
+    width: 80%;
+    height: 4.2rem;
+    font-size: 2rem;
+    line-height: 4.2rem;
+    background-color: var(--error-color);
+    color: var(--white-color);
+    border-color: transparent;
+}
+.btn__submit{
+    text-align: center;
+    padding: 2rem 0;
+}
